@@ -1,0 +1,61 @@
+.container {
+  width: 450px;
+  height: 500px;
+  border: 1px white solid;
+  background-color: rgba(108, 122, 137, 0.6);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.form div:last-of-type {
+  display: flex;
+  justify-content: space-between;
+}
+
+.button {
+  font-size: large;
+  cursor: pointer;
+  background-color: greenyellow;
+  width: 30%;
+  height: 40px;
+  border-radius: 45px;
+  margin-top: 50px;
+  border: 1px green solid;
+  font-weight: 400;
+}
+
+.formInputs {
+  display: flex;
+  flex-direction: column;
+}
+
+.formInput {
+  width: 400px;
+  height: 35px;
+  margin-top: 10px;
+}
+
+.formLabel {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 15px;
+}
+
+.error {
+  color: red;
+  font-size: 15px;
+}
+
+@media (min-width: 320px) and (max-width: 540px) {
+  .container {
+    width: 320px;
+  }
+  .formInput {
+    width: 280px;
+  }
+}

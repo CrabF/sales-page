@@ -1,0 +1,76 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 500px;
+  height: 350px;
+  border: 2px solid rgb(180, 207, 27);
+  border-radius: 15px;
+  margin: 10px;
+  background-image: url("./public/present.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 40px;
+}
+
+.title {
+  color: black;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.main {
+  color: rgb(3 1 8 / 52%);
+  font-size: 20px;
+  font-weight: 400;
+  width: 100px;
+  margin: 0;
+  padding-top: 15px;
+}
+
+.button {
+  font-size: large;
+  cursor: pointer;
+  background-color: greenyellow;
+  width: 40%;
+  height: 40px;
+  border-radius: 45px;
+  margin-top: 50px;
+  border: 1px green solid;
+  font-weight: 400;
+}
+
+.caption {
+  font-weight: 400;
+  font-size: 20px;
+  color: red;
+  display: flex;
+  flex-direction: column;
+  align-self: flex-end;
+  margin: 0;
+}
+
+@media (min-width: 320px) and (max-width: 540px) {
+  .container {
+    width: 300px;
+    background-position: right;
+    justify-content: space-between;
+    padding: 10px 0 0;
+  }
+
+  .main {
+    display: none;
+  }
+
+  .button {
+    align-self: flex-end;
+    margin: 195px 5px 0 0;
+  }
+
+  .caption {
+    width: auto;
+    align-self: flex-end;
+  }
+}
